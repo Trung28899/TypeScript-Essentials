@@ -12,3 +12,7 @@
 
         - Get the command and run it in your root foler
             For example: $ npm install --save @types/jquery
+
+## 2. Branch section2a-primitives-built-in-types:
+
+    - Showing primitives types in TypeScript

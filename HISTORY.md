@@ -16,3 +16,22 @@
 ## 2. Branch section2a-primitives-built-in-types:
 
     - Showing primitives types in TypeScript
+
+## 3. Branch section2b-interface-custom-types:
+
+    - Shows how to create custom types with interfaces
+    - Fundamentals: differences between interfaces and class in javascript
+
+## 4. section2c-types-using-type-aliases:
+
+    - Show how to create custom types with type aliases
+    - Show how to create enumerable types
+    - See Fundamentals to see:
+        +, What is type aliases ?
+        +, What is enum ?
+        +, What problem does enum solves ?
+
+    => at this point we have 3 ways of creating custom types:
+        +, interfaces
+        +, aliases
+        +, enum

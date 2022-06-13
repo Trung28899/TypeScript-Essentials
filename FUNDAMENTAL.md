@@ -12,6 +12,29 @@
 - They are only used at compile time
 - Interfaces are never available and never appear in your run-time code
 
+## 3. What is type alias ?
+
+- Type alias is simply an alias for another type.
+- They are not a type themself which means they can be used interchangeably with the type that they alias
+
+## 4. What is enum ? What problem does it solves ?
+
+    a. What is enum ?
+        - enum is a special type that has a list of hard-coded list of values
+        - enum get compiled at compile time. This allows you to refer enum at runtime
+
+    b. What problem does it solve ?
+
+        for example, you have a field named status in an interface
+        the values of status can only be "inactive" or "active"
+
+        the problem is when declaring a new instance of this interface,
+        developers can mispell the value of status.
+
+        and since it is a string, if the developer has "1nactive", the compiler cannot detect the error
+
+        => this is why we have enum
+
 ## 2. What is a generic Type ?
 
 - A generic type is simply a meta type. A type that represent any other type that you want to subtitude in

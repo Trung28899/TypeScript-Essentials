@@ -22,7 +22,7 @@
     - Shows how to create custom types with interfaces
     - Fundamentals: differences between interfaces and class in javascript
 
-## 4. section2c-types-using-type-aliases:
+## 4. Branch section2c-types-using-type-aliases:
 
     - Show how to create custom types with type aliases
     - Show how to create enumerable types
@@ -35,3 +35,8 @@
         +, interfaces
         +, aliases
         +, enum
+
+## 5. Branch section2d-typing-functions:
+
+    - Show to to type function
+    - Type function meaning: specify the type of the parameters and the type of the return values

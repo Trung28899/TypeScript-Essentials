@@ -11,6 +11,8 @@
             https://github.com/DefinitelyTyped/DefinitelyTyped
         +, Importing Third Party:
             https://www.npmjs.com/
+        +, Github Docs:
+            https://docs.google.com/document/d/1OYT-KjmYQ-A5-VnUlGFDr9n54nSIwqDIag3IwGWfzIo/edit?usp=sharing
 
 ## 1. Commands & Getting Started:
 

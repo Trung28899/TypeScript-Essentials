@@ -1,45 +1,23 @@
 interface Contact {
   id: number;
-  name: ContactName;
-  birthDate?: Date;
-  status: ContactStatus;
+  name: string;
+  // this is how we declare a method on an interface
+  // clone(name: string): Contact;
 }
 
 /*
-  what is the problem that enum solve ?
-
-  for example, you have a field named status in an interface
-  the values of status can only be "inactive" or "active"
-
-  the problem is when declaring a new instance of this interface, 
-  developers can mispell the value of status. 
-  
-  and since it is a string, if the developer has "1nactive", the compiler cannot detect the error
-
-  => this is why we have enum
-
-  What is enum ? 
-
-  enum is a special type that has a list of hard-coded list of values
-  enum get compiled at compile time. This allows you to refer enum at runtime
+  function that receive an object and return a clone
+  of that object
 */
-
-enum ContactStatus {
-  Active = "active",
-  Inactive = "inactive",
-  New = "new",
+// This is how we declare the type of parameter and return value
+function clone(source: Contact): Contact {
+  return Object.apply({}, source);
 }
 
-let primaryContact: Contact = {
-  id: 123,
-  name: "Trung",
-  status: ContactStatus.Active,
-};
+// This is how we declare a function as a parameter
+// function clone(source: Contact, func: (source: Contact) => Contact) {
+//   return Object.apply({}, source);
+// }
 
-/*
-  What is type alias ?
-
-  Type alias is simply an alias for another type. They are not a type themself
-  which means they can be used interchangeably with the type that they alias
-*/
-type ContactName = string;
+const a: Contact = { id: 123, name: "Homer Simpson" };
+const b = clone(a);

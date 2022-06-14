@@ -1,24 +1,7 @@
-/*
-    "target": "ES6" 
-    meaning gettint the ES6 version of javascript compiled 
-    "esnext" meaning getting the lastest version of javascript
-
-    "outDir": "build"
-    meaning the compiled javascript will be generated at 
-    compile time to the build folder
-
-    "noEmit": true 
-    > tell typescript not to write out a compiled javascript file at all
- 
-    "include": telling the compiler what files needed to be compile
-*/
-
 {
   "compilerOptions": {
-    "target": "esnext",
-    "outDir": "build",
-    "allowJs": true,
-    "checkJs": true
+    "target": "es6",
+    "outDir": "dist"
   },
-  "include": ["src/**/*"]
+  "include": ["**.ts"]
 }

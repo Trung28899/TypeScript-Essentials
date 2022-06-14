@@ -33,7 +33,7 @@
 
     => at this point we have 3 ways of creating custom types:
         +, interfaces
-        +, aliases
+        +, type aliases
         +, enum
 
 ## 5. Branch section2d-typing-functions:

@@ -1,23 +1,26 @@
 interface Contact {
   id: number;
   name: string;
-  // this is how we declare a method on an interface
-  // clone(name: string): Contact;
 }
 
 /*
-  function that receive an object and return a clone
-  of that object
+  This is where generics was used
+  we're telling the function to have variable type T for 
+  parameter values and return values
 */
-// This is how we declare the type of parameter and return value
-function clone(source: Contact): Contact {
+function clone<T>(source: T): T {
   return Object.apply({}, source);
 }
 
-// This is how we declare a function as a parameter
-// function clone(source: Contact, func: (source: Contact) => Contact) {
-//   return Object.apply({}, source);
-// }
+/*
+  hover over the clone methods down below to understand 
+  furthermore about generics
 
+  The generic type holder T is automatically replaced with 
+  the correct type 
+*/
 const a: Contact = { id: 123, name: "Homer Simpson" };
 const b = clone(a);
+
+const dateRange = { startDate: Date.now(), endDate: Date.now() };
+const dateRangeCopy = clone(dateRange);

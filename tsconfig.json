@@ -17,7 +17,6 @@
   "compilerOptions": {
     "target": "esnext",
     "outDir": "build",
-    "noEmit": true,
     "allowJs": true,
     "checkJs": true
   },

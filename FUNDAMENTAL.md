@@ -35,6 +35,11 @@
 
         => this is why we have enum
 
-## 2. What is a generic Type ?
+## 5. Generic Type and Generic Constraint:
 
 - A generic type is simply a meta type. A type that represent any other type that you want to subtitude in
+
+- Generic Constraint meaning a setting generic variable to extends a certain class or interface.
+  This means setting the rule for the generic type to have the properties of a class or interface.
+
+- See code in branch section2e-generics for further demonstration

@@ -40,3 +40,7 @@
 
     - Show to to type function
     - Type function meaning: specify the type of the parameters and the type of the return values
+
+## 6. Branch section3-combining-types
+
+    - How we can combine multiple types

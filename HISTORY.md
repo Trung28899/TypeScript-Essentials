@@ -44,3 +44,7 @@
 ## 6. Branch section3-combining-types
 
     - How we can combine multiple types
+
+## 7. Branch section3b-keyof-operator
+
+    - Showing usage of the keyof operator

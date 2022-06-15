@@ -40,3 +40,30 @@
 ## 3. Repository Content:
 
     => See HISTORY.md
+
+    1. 1st Commit:
+        => Basic Setup and Importing Third Party Library
+
+    2. Branch section2a-primitives-built-in-types:
+        => primitives types in TypeScript
+
+    3. Branch section2b-interface-custom-types:
+        => create custom types with interfaces
+
+    4. Branch section2c-types-using-type-aliases:
+        => create custom types with type aliases
+
+    5. Branch section2d-typing-functions:
+        => typing function
+
+    6. Branch section3-combining-types:
+        => combine multiple types
+
+    7. Branch section3b-keyof-operator
+        => usage of the keyof operator
+
+    8. Branch section3c-typeof-operator
+        => usage of the typeof operator
+
+    9. Branch section6a-modules
+        => how does modules works in JS

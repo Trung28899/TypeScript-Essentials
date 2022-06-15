@@ -1,41 +1,56 @@
-type ContactName = string;
 type ContactStatus = "active" | "inactive" | "new";
-type ContactBirthDate = Date | number | string;
+
+interface Address {
+  street: string;
+  province: string;
+  postalCode: string;
+}
 
 interface Contact {
   id: number;
-  name: ContactName;
-  birthDate?: ContactBirthDate;
-  status?: ContactStatus;
-  email: string;
+  name: string;
+  status: ContactStatus;
+  address: Address;
 }
 
-let primaryContact: Contact = {
-  id: 12345,
-  name: "Jamie Johnson",
-  status: "active",
-  email: "trevtrinh@gmail.com",
-};
+// THIS IS HOW TO USE INDEXED ACCESS TYPE
+type Awesome = Contact["address"]["postalCode"];
 
-/*
-    keyof operator expect a variable value to be 
-    the key of a certain interface
-*/
-type ContactFields = keyof Contact;
+interface ContactEvent {
+  contactId: Contact["id"];
+}
 
-// function getValue(source, propertyName: keyof Contact) {
-//   return source[propertyName];
-// }
+// THIS IS HOW WE USE typeof operator
+const myType = { min: 32, max: 55 };
+function save(number: typeof myType) {
+  return 32;
+}
 
-// function getValue<T>(source: T, propertyName: keyof T) {
-//   return source[propertyName];
-// }
+const minIs = save({ min: 11, max: 32 });
 
-/*
-    This is the same function as the 2 functions above
-*/
+interface ContactDeletedEvent extends ContactEvent {}
+
+interface ContactStatusChangedEvent extends ContactEvent {
+  oldStatus: Contact["status"];
+  newStatus: Contact["status"];
+}
+
+interface ContactEvents {
+  deleted: ContactDeletedEvent;
+  statusChanged: ContactStatusChangedEvent;
+}
+
 function getValue<T, U extends keyof T>(source: T, propertyName: U) {
   return source[propertyName];
 }
 
-const value = getValue({ min: 1, max: 200 }, "max");
+function handleEvent<T extends keyof ContactEvents>(
+  eventName: T,
+  handler: (evt: ContactEvents[T]) => void
+) {
+  if (eventName === "statusChanged") {
+    handler({ contactId: 1, oldStatus: "active", newStatus: "inactive" });
+  }
+}
+
+handleEvent("statusChanged", (evt) => evt);

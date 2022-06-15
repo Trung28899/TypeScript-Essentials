@@ -48,3 +48,13 @@
 ## 7. Branch section3b-keyof-operator
 
     - Showing usage of the keyof operator
+
+## 8. Branch section3c-typeof-operator
+
+    - Showing usage of the typeof operator
+    - Showing usage of the indexed access type
+
+## 9. Branch section6a-modules
+
+    - See FUNDAMENTAL.md for basic of modules
+    - Showing how does modules works in JS

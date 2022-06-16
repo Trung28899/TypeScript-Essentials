@@ -8,7 +8,9 @@
   After that we need to run this command on the terminal:
 
   $ tsc sandbox.ts
+
   or
+
   $ tsc sandbox.ts -w
 
 => The compiler will compile the ts file into js

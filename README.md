@@ -29,3 +29,19 @@
 
              +, Enum values typing for Props
                 /components/Status.tsx
+
+    b. Commit name: "PROP TYPES PART 2":
+
+         - Commit about event and styles typing for props in React.js
+
+         - NOTES: you can export and import types
+            > See file: Types.ts
+            > /components/Container.tsx
+
+         - Event and Styles Typing for props in React.js:
+            +, Event Typing:
+               /components/Input.tsx
+               /components/Button.tsx
+
+            +, Style Typing:
+               /component/Container.tsx

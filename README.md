@@ -67,3 +67,6 @@
 
     9. Branch section6a-modules
         => how does modules works in JS
+
+    10. Link TypeScript With HTML:
+        => See branch: link-typescript-with-html

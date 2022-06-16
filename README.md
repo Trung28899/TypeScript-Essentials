@@ -1,69 +1,19 @@
-## LEARNING TYPESCRIPT REPOSITORY
+## RUNNING TYPESCRIPT WITH HTML & CSS:
 
-    - Link to course:
-        https://www.linkedin.com/learning/typescript-essential-training-14687057
+- Video: https://www.youtube.com/watch?v=iTZ1-85I77c
 
-    - Official Docs:
-        https://www.typescriptlang.org/
+  For example, we have the sandbox.ts file.
+  We need to link the sandbox.js file into index.html by a script tag
 
-    - Other Links:
-        +, DefinitelyTyped
-            https://github.com/DefinitelyTyped/DefinitelyTyped
-        +, Importing Third Party:
-            https://www.npmjs.com/
-        +, Github Docs:
-            https://docs.google.com/document/d/1OYT-KjmYQ-A5-VnUlGFDr9n54nSIwqDIag3IwGWfzIo/edit?usp=sharing
+  After that we need to run this command on the terminal:
 
-## 1. Commands & Getting Started:
+  $ tsc sandbox.ts
+  or
+  $ tsc sandbox.ts -w
 
-    - Setting up TypeScript:
-        https://www.typescriptlang.org/download
+=> The compiler will compile the ts file into js
 
-    - Need to install node and npm before TypeScript
+NOTES: the command down below allow vscode to watch changes that happened in the sandbox.ts
+file and restart the server
 
-    - Install TypeScript at the project level:
-        $ npm install typescript --save-dev
-
-    - Install TypeScript at global level:
-        $ npm install -g typescript
-
-    - Setup tsconfig.json file
-
-    - TypeScript Commands:
-
-        $ tsc
-
-## 2. What is TypeScript and why do we use it ?
-
-    => See FUNDAMENTAL.md
-
-## 3. Repository Content:
-
-    => See HISTORY.md
-
-    1. 1st Commit:
-        => Basic Setup and Importing Third Party Library
-
-    2. Branch section2a-primitives-built-in-types:
-        => primitives types in TypeScript
-
-    3. Branch section2b-interface-custom-types:
-        => create custom types with interfaces
-
-    4. Branch section2c-types-using-type-aliases:
-        => create custom types with type aliases
-
-    5. Branch section2d-typing-functions:
-        => typing function
-
-    6. Branch section3-combining-types:
-        => combine multiple types
-
-    7. Branch section3b-keyof-operator
-        => usage of the keyof operator
-
-    8. Branch section3c-typeof-operator
-        => usage of the typeof operator
-
-    9. Branch section6a-modules
-        => how does modules works in JS
+$ tsc sandbox.ts -w

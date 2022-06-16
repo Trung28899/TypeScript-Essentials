@@ -1,72 +1,31 @@
-## LEARNING TYPESCRIPT REPOSITORY
+## React.js with TypeScript
 
-    - Link to course:
-        https://www.linkedin.com/learning/typescript-essential-training-14687057
+1.  Commands & Resources:
 
-    - Official Docs:
-        https://www.typescriptlang.org/
+    - Video series:
+      https://www.youtube.com/playlist?list=PLC3y8-rFHvwi1AXijGTKM0BKtHzVC-LSK
 
-    - Other Links:
-        +, DefinitelyTyped
-            https://github.com/DefinitelyTyped/DefinitelyTyped
-        +, Importing Third Party:
-            https://www.npmjs.com/
-        +, Github Docs:
-            https://docs.google.com/document/d/1OYT-KjmYQ-A5-VnUlGFDr9n54nSIwqDIag3IwGWfzIo/edit?usp=sharing
+    - Command to start the React.js TypeScript app:  
+      $ npx create-react-app folder_name --template typescript
 
-## 1. Commands & Getting Started:
+2.  Commit History:
 
-    - Setting up TypeScript:
-        https://www.typescriptlang.org/download
+    a. Commit name: "PROP TYPES PART 1":
 
-    - Need to install node and npm before TypeScript
+         - Commit about typing for props in React.js
 
-    - Install TypeScript at the project level:
-        $ npm install typescript --save-dev
+         - Types and Demonstration in React.js:
+             +, Primitives Typing for Props:
+                /components/Greet.tsx
 
-    - Install TypeScript at global level:
-        $ npm install -g typescript
+             +, Array Typing for Props:
+                /components/PersonList.tsx
 
-    - Setup tsconfig.json file
+             +, Custom Object for Props:
+                /components/Person.tsx
 
-    - TypeScript Commands:
+             +, React.js Component for Props / children props:
+                /components/Oscar.tsx
 
-        $ tsc
-
-## 2. What is TypeScript and why do we use it ?
-
-    => See FUNDAMENTAL.md
-
-## 3. Repository Content:
-
-    => See HISTORY.md
-
-    1. 1st Commit:
-        => Basic Setup and Importing Third Party Library
-
-    2. Branch section2a-primitives-built-in-types:
-        => primitives types in TypeScript
-
-    3. Branch section2b-interface-custom-types:
-        => create custom types with interfaces
-
-    4. Branch section2c-types-using-type-aliases:
-        => create custom types with type aliases
-
-    5. Branch section2d-typing-functions:
-        => typing function
-
-    6. Branch section3-combining-types:
-        => combine multiple types
-
-    7. Branch section3b-keyof-operator
-        => usage of the keyof operator
-
-    8. Branch section3c-typeof-operator
-        => usage of the typeof operator
-
-    9. Branch section6a-modules
-        => how does modules works in JS
-
-    10. Link TypeScript With HTML:
-        => See branch: link-typescript-with-html
+             +, Enum values typing for Props
+                /components/Status.tsx

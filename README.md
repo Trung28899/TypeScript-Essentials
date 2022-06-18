@@ -8,6 +8,10 @@
     - Command to start the React.js TypeScript app:  
       $ npx create-react-app folder_name --template typescript
 
+    - useReducer():
+      +, See this video: https://www.youtube.com/watch?v=yn-8PVKBBn0
+      +, See this article: https://blog.logrocket.com/react-usereducer-hook-ultimate-guide/#:~:text=type%20is%20dispatched.-,useState%20vs.,managing%20more%20complex%20state%20logic.
+
 2.  Commit History:
 
     a. Commit name: "PROP TYPES PART 1":
@@ -45,3 +49,19 @@
 
             +, Style Typing:
                /component/Container.tsx
+
+    c. Commit name: "useState and state Typing"
+
+         - Commit about the useState() hook and typing for state
+
+         - See the files down below:
+            > /components/state/LoggedIn.tsx
+            > /components/state/User.tsx
+
+    d. Commit name: "useReducer() Hook"
+
+         - Commit about the useReducer() hook and typing for it
+
+         - What is useReducer() hook ?
+            +, See FUNDAMENTAL.md
+            +, See /component/state/Counter.tsx

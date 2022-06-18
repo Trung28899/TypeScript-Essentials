@@ -65,3 +65,11 @@
          - What is useReducer() hook ?
             +, See FUNDAMENTAL.md
             +, See /component/state/Counter.tsx
+
+    e. Commit name: "useContext() Hook"
+
+         - Commit about the useContext() hook to manage app-level state and typing for it
+
+         - How to use it ?
+            +, See context folder
+            +, See App.tsx

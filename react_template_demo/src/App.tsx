@@ -5,9 +5,13 @@ import "./App.css";
 // import Status from "./components/Status";
 // import Heading from "./components/Heading";
 // import Oscar from "./components/Oscar";
-import Button from "./components/Button";
-import Input from "./components/Input";
-import Container from "./components/Container";
+// import Button from "./components/Button";
+// import Input from "./components/Input";
+// import Container from "./components/Container";
+// import { ThemeContextProvider } from "./components/context/ThemeContext";
+// import Box from "./components/context/Box";
+import { UserContextProvider } from "./components/context/UserContext";
+import User from "./components/context/User";
 
 function App() {
   // const personName = {
@@ -32,15 +36,12 @@ function App() {
 
   return (
     <div className="App">
-      <Button
-        handleClick={() => console.log("Handle click")}
-        handleClick2={(event, id) => console.log("button clicked", event, id)}
-      />
-      <Input
-        value=""
-        handleChange={(event) => console.log(event.target.value)}
-      />
-      <Container styles={{ border: "1px solid black", padding: "1rem" }} />
+      {/* <ThemeContextProvider>
+        <Box />
+      </ThemeContextProvider> */}
+      <UserContextProvider>
+        <User />
+      </UserContextProvider>
     </div>
   );
 }

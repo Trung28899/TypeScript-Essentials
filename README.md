@@ -70,3 +70,6 @@
 
     10. Link TypeScript With HTML:
         => See branch: link-typescript-with-html
+
+    11. TypeScript in React.js:
+        => See branch: react-js-with-typescript
